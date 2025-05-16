@@ -1,0 +1,60 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom, #ffe0f0, #ffddee);
+  color: #a64ac9;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 400px;
+  gap: 60px;
+}
+
+.tower {
+  width: 120px;
+  height: 300px;
+  background: #f8e8ff;
+  border: 2px dashed #a64ac9;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.block {
+  height: 30px;
+  border-radius: 50px;
+  margin: 5px 0;
+  cursor: grab;
+}
+
+.violet { width: 100px; background-color: #8a2be2; }
+.blue   { width: 85px; background-color: #6495ed; }
+.pink   { width: 70px; background-color: #ff69b4; }
+.orange { width: 55px; background-color: #ffa07a; }
+.yellow { width: 40px; background-color: #ffeb3b; }
+
+#message {
+  margin-top: 30px;
+  font-size: 1.8em;
+  color: #d63384;
+}
+
+#confetti {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
